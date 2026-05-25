@@ -194,6 +194,22 @@ a {
   color: #6b7280;
 }
 
+select.input {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 2.5rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23374151' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  background-size: 0.75rem;
+}
+
+select.input:disabled {
+  background-color: #f3f4f6;
+}
+
 .employee-filters-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
