@@ -9,6 +9,29 @@ npm install
 npm run dev
 ```
 
+## Tests
+
+Unit tests use [Vitest](https://vitest.dev/) and [@vue/test-utils](https://test-utils.vuejs.org/):
+
+| Area | What is covered |
+|------|-----------------|
+| `employeeStatus` | Date-based status rules (with fake timers) |
+| `employeeValidation` | Required fields, duplicates, edit flow, date rules |
+| `dateUtils` | Parsing, sorting, formatting |
+| `employeeStorage` | `localStorage` read/write and error handling |
+| `useEmployees` | CRUD composable with provide/inject |
+| `StatusBadge` | Variant classes and `data-testid` |
+
+```bash
+npm test
+```
+
+Watch mode while developing:
+
+```bash
+npm run test:watch
+```
+
 ## Git
 
 20 incremental commits on `master`. Push to GitHub:
